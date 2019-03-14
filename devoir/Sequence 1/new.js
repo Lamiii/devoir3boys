@@ -1,0 +1,1 @@
+alert('Vous venez de cliquer sur un lien');

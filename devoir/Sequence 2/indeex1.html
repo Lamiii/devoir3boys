@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Séquence 2</title>
+</head>
+<body>
+
+	<h1>Exercice 2 question 1.1 <a href="exo-2-3.html" style="float: right;">next(Exercice 2 question 1.2)</a></h1>
+    <img src="../images/ima.png" id="ima1" onmouseover="changerImage2()" onmouseout="changerImage3()">
+    <p id="bbb"></p><br>
+
+    <img src="../images/ima2.png" id="ima2" onmouseover="changerImage4()" onmouseout="changerImage5()"><br>
+    <p id="bba"></p>
+	<img src="../images/image1.jpg" id="image" onmouseover="changerImage()" onmouseout="changerImage1()">
+	
+	<!--<div id="renseignement" style="height: 40px;"><p id="bbb">&nbsp;</p></div>
+	<script type="text/javascript">
+		document.getElementById('bbb').innerHTML="contact";
+	</script>-->
+	
+
+
+	<script type="text/javascript">
+		
+		function changerImage2() {
+			var y = document.getElementById('bbb');
+            y.innerHTML = "Appelez nous au 06 06 06 06 pour toutes vos demandes.";
+			var x = document.getElementById('ima1');
+			x.style.opacity = 0.5;
+			x.style.filter = alpha(opacity=50);
+			
+		}
+		function changerImage3() {
+			var y = document.getElementById('bbb');
+            y.innerHTML = "" ;
+			var x = document.getElementById('ima1');
+			x.style.opacity = "";
+			
+			 
+			
+		}
+		function changerImage4() {
+			var y = document.getElementById('bba');
+            y.innerHTML = "Envoyer nous un couriel à contact[at]sfcv.com, nous vous répondrons immédiatement.";
+			var x = document.getElementById('ima2');
+			x.style.opacity = 0.6;
+			x.style.filter = alpha(opacity=50);
+			
+			
+		}
+		function changerImage5() {
+			var y = document.getElementById('bba');
+            y.innerHTML = "" ;
+			var x = document.getElementById('ima2');
+			x.src = "../images/ima2.png";
+			x.style.opacity = "";
+			 
+		}
+		function changerImage() {
+			var x = document.getElementById('image');
+			x.src = "../images/image2.jpg";
+			
+		}
+		function changerImage1() {
+			var x = document.getElementById('image');
+			x.src = "../images/image1.jpg";
+			 //"Envoyer nous un couriel à contact[at]sfcv.com, nous vous répondrons immédiatement."
+		}
+
+		/*function afficherInformation() {
+			var y = document.getElementById('bbb');
+			y.innerHTML = "contact";
+		}*/
+			
+		
+	</script>
+	<!--<img src="../images/ima.png" id="ima" onmouseover="changerImage()">
+	<script type="text/javascript">
+		function changerImage() {
+			var x = document.getElementById('image');
+			x.background = "green";
+			
+		}
+	</script>-->
+
+</body>
+</html>
